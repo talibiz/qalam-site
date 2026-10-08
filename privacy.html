@@ -29,12 +29,13 @@
 <header><div class="urdu">قلم</div></header>
 <main>
   <h1>Privacy Policy — قلم (Qalam)</h1>
-  <p class="date">Last updated: 3 September 2026</p>
+  <p class="date">Last updated: 8 October 2026</p>
 
   <div class="urdu-note">
     <p class="urdu">خلاصہ: قلم آپ کے اپنے کمپیوٹر پر چلتا ہے۔ نہ کوئی اکاؤنٹ،
-    نہ ٹیلی میٹری، نہ اشتہار۔ آپ کی تحریر صرف اُس وقت آلے سے باہر جاتی ہے جب
-    آپ خود AI پروف ریڈنگ یا املا (ڈکٹیشن) چلائیں — آپ ہی کی API کلید سے۔</p>
+    نہ ٹیلی میٹری، نہ اشتہار۔ آپ کی تحریر یا آواز صرف اُس وقت آلے سے باہر جاتی
+    ہے جب آپ خود کوئی اختیاری AI سہولت چلائیں — پروف ریڈنگ، شعر کی تشریح، لفظ
+    کے معنی، املا (ڈکٹیشن) یا بلند خوانی — اور وہ بھی آپ ہی کی API کلید سے۔</p>
   </div>
 
   <p>Qalam is a word processor that runs on your own computer. It is built so
@@ -56,21 +57,33 @@
      below.</p>
 
   <h2>When text or audio leaves your device: the optional AI features</h2>
-  <p>Qalam includes two <b>optional</b> AI features. Both are off unless you
-     set them up with your own API key, and both run only when you explicitly
-     invoke them:</p>
+  <p>Qalam includes <b>optional</b> AI features. All of them are off unless
+     you set them up with your own API key, and each runs only when you
+     explicitly invoke it:</p>
   <ul>
     <li><b>AI proofreading</b> — sends the text being proofread (the document
         or your selection) to the service you chose.</li>
+    <li><b>Couplet explanation</b> — sends the couplet you selected, together
+        with the metre Qalam identified for it, to the service you chose.</li>
+    <li><b>Word meaning</b> — sends the word you asked about and the sentence
+        it appears in, so the meaning can be read in context.</li>
     <li><b>Urdu dictation</b> — records audio only while you are dictating and
         sends that recording for transcription.</li>
+    <li><b>Read aloud</b> — sends the passage being read (from the cursor, or
+        your selection), one paragraph at a time, to be turned into
+        speech.</li>
   </ul>
-  <p>The supported services are <b>Google Gemini</b> (see Google's privacy
-     terms for the Gemini API) and <b>Anthropic Claude</b> (see Anthropic's
-     privacy policy). The request travels over an encrypted connection using
-     <b>your own API key</b>, so your relationship for that request is
-     directly with that provider, under their terms. Qalam does not proxy,
-     copy, log, or retain the text or audio. Nothing is sent in the
+  <p>Proofreading, couplet explanation and word meaning use <b>Google
+     Gemini</b> (see Google's privacy terms for the Gemini API) or
+     <b>Anthropic Claude</b> (see Anthropic's privacy policy), whichever you
+     chose; dictation uses Google Gemini; read aloud uses <b>Microsoft Azure
+     AI Speech</b> (see Microsoft's privacy statement), in the Azure region
+     you chose.</p>
+  <p>Each request travels over an encrypted connection using <b>your own API
+     key</b>, so your relationship for that request is directly with that
+     provider, under their terms. Qalam does not proxy, copy, log, or retain
+     the text or audio; the speech it plays is kept only in temporary files on
+     your device, deleted when reading stops. Nothing is sent in the
      background, on a schedule, or without your action.</p>
 
   <h2>Other network connections</h2>
