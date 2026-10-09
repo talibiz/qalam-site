@@ -29,22 +29,27 @@
 <header><div class="urdu">قلم</div></header>
 <main>
   <h1>Privacy Policy — قلم (Qalam)</h1>
-  <p class="date">Last updated: 8 October 2026</p>
+  <p class="date">Last updated: 9 October 2026</p>
 
   <div class="urdu-note">
-    <p class="urdu">خلاصہ: قلم آپ کے اپنے کمپیوٹر پر چلتا ہے۔ نہ کوئی اکاؤنٹ،
-    نہ ٹیلی میٹری، نہ اشتہار۔ آپ کی تحریر یا آواز صرف اُس وقت آلے سے باہر جاتی
-    ہے جب آپ خود کوئی اختیاری AI سہولت چلائیں — پروف ریڈنگ، شعر کی تشریح، لفظ
-    کے معنی، املا (ڈکٹیشن) یا بلند خوانی — اور وہ بھی آپ ہی کی API کلید سے۔</p>
+    <p class="urdu">خلاصہ: قلم آپ کے اپنے کمپیوٹر پر چلتا ہے۔ نہ کوئی اکاؤنٹ، نہ ٹیلی میٹری،
+    نہ اشتہار۔ آپ کی تحریر یا آواز صرف اُس وقت آلے سے باہر جاتی ہے جب آپ خود کوئی
+    اختیاری AI سہولت چلائیں — پروف ریڈنگ، شعر کی تشریح، لفظ کے معنی، املا
+    (ڈکٹیشن) یا بلند خوانی۔ یہ یا تو آپ ہی کی API کلید سے ہوتا ہے، یا قلم کریڈٹ
+    سے، جس میں تحریر قلم کے اپنے سرور سے ہوتی ہوئی متعلقہ سروس تک پہنچتی ہے —
+    محفوظ نہیں کی جاتی، نہ اس کا ریکارڈ رکھا جاتا ہے۔ ویب سے خریداری Paddle کے
+    ذریعے ہوتی ہے۔</p>
   </div>
 
   <p>Qalam is a word processor that runs on your own computer. It is built so
      that your writing stays yours.</p>
 
   <h2>What Qalam collects</h2>
-  <p><b>Nothing.</b> Qalam has no account system, no telemetry, no analytics,
-     no advertising, and no crash reporting. The developer receives no
-     information about you or your documents.</p>
+  <p><b>Nothing about your writing.</b> Qalam has no account system, no
+     telemetry, no analytics, no advertising, and no crash reporting, and your
+     documents never reach the developer. Only two optional things involve the
+     developer's server, and each keeps the minimum it needs — see "Qalam
+     Credits" and "Buying Qalam Pro outside the App Store" below.</p>
 
   <h2>Where your documents live</h2>
   <p>Your documents are stored as files on your own device, in the location
@@ -86,6 +91,38 @@
      your device, deleted when reading stops. Nothing is sent in the
      background, on a schedule, or without your action.</p>
 
+  <h2>Qalam Credits (optional)</h2>
+  <p>Qalam Pro users can run the AI features without an API key of their own
+     by paying with Qalam Credits. In that case the request goes through
+     Qalam's own server (qalam.stzdeveloper.com, hosted by Cloudflare) to the
+     provider — Anthropic Claude for text features, Microsoft Azure AI Speech
+     for read aloud, Google Gemini for dictation:</p>
+  <ul>
+    <li><b>Your text or audio</b> is passed on to answer that one request and
+        is <b>never stored or logged</b> by Qalam's server.</li>
+    <li><b>Your credit account</b> is kept so your balance survives: an
+        internal account id tied to your Qalam Pro purchase (your licence, or
+        your App Store purchase), a credential stored on your device, the
+        packs you bought, and a ledger of what each request cost — the feature
+        used, its size, and the provider's token count. No names, no text, no
+        audio.</li>
+    <li>Credit packs bought in the App Store are paid to Apple; on the web
+        they are paid through Paddle (see below). The server checks each App
+        Store purchase with Apple and receives Apple's notice if one is
+        refunded.</li>
+  </ul>
+
+  <h2>Buying Qalam Pro outside the App Store</h2>
+  <p>Direct downloads and the Microsoft Store version can buy Qalam Pro and
+     credit packs on the web, through <b>Paddle</b> (paddle.com), our
+     reseller: the checkout and receipt show <b>STZ Developer</b>, and your
+     card statement <b>PADDLE.NET* STZDEVELO</b>. Paddle handles the payment
+     details; the developer never sees them. Qalam's server keeps your
+     <b>email address</b> (to send a recovery link if you reinstall or change
+     computers), your licence, and a one-way fingerprint of each computer it
+     is activated on (a hash, not a hardware serial), so a licence can be
+     moved between your machines.</p>
+
   <h2>Other network connections</h2>
   <ul>
     <li><b>Update check (direct downloads only)</b> — the version of Qalam
@@ -93,12 +130,12 @@
         a day to see whether a newer version exists. The request contains no
         personal information or document content. The App Store version makes
         no such request; updates come through the App Store itself.</li>
-    <li><b>App Store purchases</b> — the optional Qalam Pro purchase is
-        processed entirely by Apple. The developer never sees your payment
-        details.</li>
+    <li><b>App Store purchases</b> — Qalam Pro and credit packs bought in the
+        App Store are processed entirely by Apple; the developer never sees
+        payment details.</li>
   </ul>
-  <p>If you never use the AI features, Qalam makes no other network
-     connections.</p>
+  <p>If you never use the AI features, credits or a web purchase, Qalam
+     makes no other network connections.</p>
 
   <h2>Spellcheck and poetry tools</h2>
   <p>Spellchecking, poetry alignment, and تقطیع (metrical scansion) are
